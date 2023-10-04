@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS BY NOAL</title>
+</head>
+<body>
+    <h1> from htmx</h1>
+    <form method="post" class="max-w-md mx-auto p-6 bg-white rounded shadow-md">
+    {% csrf_token %}
+    <div class="mb-4">
+        <label for="dorm" class="block text-sm font-medium text-gray-600">Dorm:</label>
+        <input type="text" id="dorm" name="dorm" required
+               class="mt-1 p-2 border rounded w-full focus:outline-none focus:ring focus:border-blue-300">
+    </div>
+
+    <div class="mb-4">
+        <label for="campus" class="block text-sm font-medium text-gray-600">Campus:</label>
+        <input type="text" id="campus" name="campus" required
+               class="mt-1 p-2 border rounded w-full focus:outline-none focus:ring focus:border-blue-300">
+    </div>
+
+    <div class="mb-4">
+        <label for="bottleNumber" class="block text-sm font-medium text-gray-600">Bottle Number:</label>
+        <input type="number" id="bottleNumber" name="bottleNumber" required
+               class="mt-1 p-2 border rounded w-full focus:outline-none focus:ring focus:border-blue-300">
+    </div>
+
+    <div class="mt-4">
+        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300">
+            Submit
+        </button>
+    </div>
+</form>
+
+
+</body>
+</html>
